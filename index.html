@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="badartsentertainment" content="Website for an Irish hip-hop label, bad arts entertainment.">
+        <meta name="theme-color" content="#000000"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link type="css" rel="stylesheet" href="{% static 'base.css' %}">
+        <link rel="shortcut icon" type="image/png" href="https://ik.imagekit.io/iscs6ll976z/favicon-32x32_GfLzQifvo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649870138622">
+        <link rel="apple-touch-icon" href="https://ik.imagekit.io/iscs6ll976z/favicon-32x32_GfLzQifvo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649870138622">
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="https://kit.fontawesome.com/cfd5bd64a2.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="{% static 'base.js' %}"></script>
+
+
+    <title>Bad Arts</title>
+
+</head>
+<body>
+    <header class="container">
+        <!--Start of navigation bar-->
+        <nav class="navbar navbar-expand-md sticky-top">
+            <a class="navbar-brand" href=""><img class="navbar-img" src="https://ik.imagekit.io/iscs6ll976z/nav-logo_gASRyJwIWK?ik-sdk-version=javascript-1.4.3&updatedAt=1649242498226" alt="bad arts logo" /></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#bad-nav" aria-controls="bad-nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars fa-1x"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bad-nav">
+                <ul class="navbar-nav ml-auto" id="other-items">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Merch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Recording</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--End of Navigation bar-->
+    </header>
+
+    <div class="container">
+        <!--Start of main carousel.-->
+    <div id="carousel-main" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-main" data-slide-to="1"></li>
+            <li data-target="#carousel-main" data-slide-to="2"></li>
+            <li data-target="#carousel-main" data-slide-to="3"></li>
+            <li data-target="#carousel-main" data-slide-to="4"></li>
+            <li data-target="#carousel-main" data-slide-to="5"></li>
+            <li data-target="#carousel-main" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://ik.imagekit.io/iscs6ll976z/artists/thjy_DwAWV3Sew?ik-sdk-version=javascript-1.4.3&updatedAt=1649338317312" class="carousel-img d-block w-100" id="r3" alt="1">
+                <div class="carousel-caption">
+                    <div class="container jumbo-text">
+                        <h3 class="display-4">Bad Arts Crew</h3>
+                            <p class="lead">Weston, Limerick </p>
+                    </div>
+                </div>
+            </div>
+            {% for photo in photos %}
+                {% if photo.carousel_active %}
+                <div class="carousel-item" id="{{ photo.title }}">
+                    {% if photo.url %}
+                        <a href="{{ photo.url }}" target="_blank">
+                            <img src="{{ photo.image_url }}" class="carousel-img d-block w-100" id="r3" alt="1">
+                            <div class="carousel-caption">
+                                <div class="container jumbo-text">
+                                    <h3 class="display-4">{{ photo.title }}</h3>
+                                    <p class="lead">{{ photo.display_performer_names }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    {% else %}
+                        <img src="{{ photo.image_url }}" class="carousel-img d-block w-100" id="r3" alt="1">
+                        <div class="carousel-caption">
+                            <div class="container jumbo-text">
+                                <h3 class="display-4">{{ photo.title }}</h3>
+                                <p class="lead">{{ photo.display_performer_names }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+<!--End of main carousel-->
+
+<div class="grid-container" id="artist-grid-container">
+    <div class="artist-card center-align">
+        <div class="card-header">
+            <a href="{% url 'artist_profile' '6380abdc-5279-4e6f-b106-acb09d0a5628' %}">
+                <img class="card-img responsive" src="https://ik.imagekit.io/badartsentertainment/green_1_zIGyH_h6U?ik-sdk-version=javascript-1.4.3&updatedAt=1649696452470" alt="DJ Green">
+            </a>
+        </div>
+        <div class="card-body">
+            <h4>DJ Green</h4>
+        </div>
+    </div>
+    {% for artist in artists %}
+        {% if artist.active %}
+        <div class="artist-card center-align">
+            <div class="card-header">
+                {% if artist.image_url %}
+                <a href="{% url 'artist_profile' artist.id %}">
+                    <img class="card-img responsive" src="{{ artist.image_url }}" alt="{{ artist.name }}">
+                </a>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <h4>{{ artist.name }}</h4>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                <h6>About</h6>
+                <p class="text-justify">Bad Arts Entertainment is a hip hop label formed in 2020, based in Ireland. The label's roster is comprises of DJ Green (General Manager, also known under his rapper alias - A10Sín), Trust, Bigman Davey, Sun of Dawn, Goblin, Shark Tooth, Carl French, Buachaill Rian Dan, groups - Indecisive (Damz & Kafeen) & The Bodysnatcherz (Drewbious Prime & Shy Son)</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="{% url 'products' %}">Shop</a></li>
+                    <li><a href="{% url 'videos' %}">Videos</a></li>
+                    <li><a href="{% url 'recording' %}">Record With Us</a></li>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+                </div>
+            </div>
+            <hr>
+            </div>
+            <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by BadArtsEntertainment.</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                    <li><a class="facebook" href="https://www.facebook.com/badartsentertainment/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="https://twitter.com/BadArtsEnterta1?ref_src=twsrc%5Etfw" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="bandcamp" href="https://badartsentertainment.bandcamp.com/" target="_blank"><i class="fa fa-bandcamp"></i></a></li>
+                    <li><a class="youtube" href="https://www.youtube.com/channel/UCThENMecXQjSUiKiTjWP5Dw" target="_blank"><i class="fa fa-youtube"></i></a></li>   
+                </ul>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+
+    <script></script>
+</body>
+</html>
